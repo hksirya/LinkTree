@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="shortcut icon"
+      href="./assets/hks-logo.ico"
+      type="image/x-icon"
+    />
+    <script>
+      tailwind.config = {
+        theme: {
+          screens: {
+            sm: "480px",
+            md: "768px",
+            lg: "976px",
+            xl: "1440px",
+          },
+
+          extend: {
+            colors: {
+              darkViolet: "#111827",
+            },
+            fontFamily: {
+              sans: ["Poppins", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alata&family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>LinkTree</title>
+  </head>
+  <body class="bg-darkViolet h-screen">
+    <section id="navbar">
+      <div
+        class="w-full bg-darkViolet backdrop-filter backdrop-blur-lg bg-opacity-50 cursor-pointer"
+      >
+        <div
+          class="flex justify-center items-center max-w-6xl text-white mx-auto px-4 py-12"
+        >
+          <h1 class="z-10 font-bold mx-auto text-5xl text-white text-center">
+            Hksirya
+          </h1>
+        </div>
+        <div class="absolute overflow-hidden -top-32 md:-top-72 md:right-36">
+          <img
+            src="https://braydoncoyer.dev/_next/static/media/rays.426980b9.png"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section id="items">
+      <div
+        class="flex flex-col space-y-8 max-w-6xl justify-center items-center p-10 mt-10 mx-auto"
+      >
+        <div
+          class="z-20 flex flex-row justify-between items-center p-4 md:p-3 bg-white rounded-full space-x-5 md:space-x-20 hover:-translate-y-2 active:translate-y-0 ease-in duration-200 transform cursor-pointer shadow-slate-700 shadow-2xl hover:"
+        >
+          <img src="./assets/portfolio.svg" class="w-12 h-12 md:w-16 md:h-16" />
+          <h1 class="font-bold text-xl md:text-3xl">Portfolio</h1>
+          <a href="https://hksirya.netlify.app/" target="_blank"
+            ><button
+              class="bg-black rounded-full text-base px-7 md:px-10 p-3 text-white font-bold md:text-2xl shadow-xl shadow-gray-600 hover:bg-white hover:text-black border-2 border-black hover:border-gray-800 hover:-translate-y-1 active:translate-y-0 ease-in duration-200 transform"
+            >
+              Link
+            </button>
+          </a>
+        </div>
+        <div
+          class="z-20 flex flex-row justify-between items-center p-4 md:p-3 bg-white rounded-full space-x-5 md:space-x-20 hover:-translate-y-2 active:translate-y-0 ease-in duration-200 transform cursor-pointer shadow-slate-700 shadow-2xl"
+        >
+          <img src="./assets/linkedin.svg" class="w-12 h-12 md:w-16 md:h-16" />
+          <h1 class="font-bold text-xl md:text-3xl">LinkedIn</h1>
+          <a href="https://www.linkedin.com/in/hksirya/" target="_blank"
+            ><button
+              class="bg-black rounded-full text-base px-7 md:px-10 p-3 text-white font-bold md:text-2xl shadow-xl shadow-gray-600 hover:bg-white hover:text-black border-2 border-black hover:border-gray-800 hover:-translate-y-1 active:translate-y-0 ease-in duration-200 transform"
+            >
+              Link
+            </button>
+          </a>
+        </div>
+        <div
+          class="z-20 flex flex-row justify-between items-center p-4 md:p-4 bg-white rounded-full space-x-5 md:space-x-20 hover:-translate-y-2 active:translate-y-0 ease-in duration-200 transform cursor-pointer shadow-slate-700 shadow-2xl"
+        >
+          <img src="./assets/github.svg" class="w-12 h-12 md:w-16 md:h-16" />
+          <h1 class="font-bold text-xl md:text-3xl">Github</h1>
+          <a href="https://github.com/hksirya" target="_blank"
+            ><button
+              class="bg-black rounded-full text-base px-7 md:px-10 p-3 text-white font-bold md:text-2xl shadow-xl shadow-gray-600 hover:bg-white hover:text-black border-2 border-black hover:border-gray-800 hover:-translate-y-1 active:translate-y-0 ease-in duration-200 transform"
+            >
+              Link
+            </button>
+          </a>
+        </div>
+        <div
+          class="z-20 flex flex-row justify-between items-center p-4 md:p-4 bg-white rounded-full space-x-5 md:space-x-20 hover:-translate-y-2 active:translate-y-0 ease-in duration-200 transform cursor-pointer shadow-slate-700 shadow-2xl"
+        >
+          <img src="./assets/twitter.svg" class="w-12 h-12 md:w-16 md:h-16" />
+          <h1 class="font-bold text-xl md:text-3xl">Twitter</h1>
+          <a href="https://mobile.twitter.com/hksirya" target="_blank"
+            ><button
+              class="bg-black rounded-full text-base px-7 md:px-10 p-3 text-white font-bold md:text-2xl shadow-xl shadow-gray-600 hover:bg-white hover:text-black border-2 border-black hover:border-gray-800 hover:-translate-y-1 active:translate-y-0 ease-in duration-200 transform"
+            >
+              Link
+            </button>
+          </a>
+        </div>
+      </div>
+
+      <div class="w-full border border-b-2 border-gray-800"></div>
+    </section>
+
+    <section id="footer" class="bg-darkViolet">
+      <div class="flex flex-col justify-center py-4">
+        <h1 class="text-gray-600 font-thin text-center">
+          Contact me : hksirya@gmail.com
+        </h1>
+        <h1 class="text-gray-600 font-thin text-center">
+          Made by : Harsh Kumar Sirya
+        </h1>
+      </div>
+    </section>
+  </body>
+</html>
